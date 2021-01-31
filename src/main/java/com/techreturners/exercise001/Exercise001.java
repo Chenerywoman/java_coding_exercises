@@ -26,8 +26,16 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        // Add your code here
-        return "";
+
+        char[] characters = sentence.toCharArray();
+        
+        String reversed = new String("");
+
+        for (int i = characters.length - 1; i >= 0; i--){
+            reversed = reversed + characters[i];
+        }
+
+        return reversed;
     }
 
     public int countLinuxUsers(List<User> users) {
