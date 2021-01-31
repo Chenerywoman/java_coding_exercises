@@ -3,6 +3,7 @@ package com.techreturners.exercise001;
 import java.util.List;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.lang.StringBuilder;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
@@ -39,7 +40,18 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        // Add your code here
-        return 0;
+        
+        int count = 0;
+
+        for(int i = 0; i < users.size(); i++){
+
+            // System.out.println(users[i].type);
+            if (users.get(i).getType().equals("Linux")){
+
+                count = count + 1;
+            }
+        }
+
+        return count;
     }
 }
