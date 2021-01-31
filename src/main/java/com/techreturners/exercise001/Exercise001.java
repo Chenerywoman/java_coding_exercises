@@ -3,7 +3,6 @@ package com.techreturners.exercise001;
 import java.util.List;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.lang.StringBuilder;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
