@@ -6,12 +6,10 @@ import java.math.RoundingMode;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        // Add your code here
         return Character.toUpperCase(word.charAt(0)) + word.substring(1);
     }
 
-    public String generateInitials(String firstName, String lastName) {
-        
+    public String generateInitials(String firstName, String lastName) {    
         return Character.toUpperCase(firstName.charAt(0)) + "." + Character.toUpperCase(lastName.charAt(0));
     }
 
@@ -29,7 +27,7 @@ public class Exercise001 {
 
         char[] characters = sentence.toCharArray();
         
-        String reversed = new String("");
+        String reversed = "";
 
         for (int i = characters.length - 1; i >= 0; i--){
             reversed = reversed + characters[i];
@@ -43,8 +41,6 @@ public class Exercise001 {
         int count = 0;
 
         for(int i = 0; i < users.size(); i++){
-
-            // System.out.println(users[i].type);
             if (users.get(i).getType().equals("Linux")){
 
                 count = count + 1;
